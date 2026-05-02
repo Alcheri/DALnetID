@@ -29,7 +29,7 @@
 ###
 
 """
-ID: A plugin to identify to DALnet's NickServ
+DALnetID: A plugin to identify to DALnet's NickServ
 """
 
 import sys

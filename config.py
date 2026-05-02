@@ -33,7 +33,7 @@ from supybot import conf, registry
 try:
     from supybot.i18n import PluginInternationalization
 
-    _ = PluginInternationalization("ID")
+    _ = PluginInternationalization("DALnetID")
 except:
     # Placeholder that allows to run the plugin on a bot
     # without the i18n module
@@ -47,16 +47,16 @@ def configure(advanced):
     # registry as appropriate.
     from supybot.questions import expect, anything, something, yn
 
-    conf.registerPlugin("ID", True)
+    conf.registerPlugin("DALnetID", True)
 
 
-ID = conf.registerPlugin("ID")
+DALnetID = conf.registerPlugin("DALnetID")
 # This is where your configuration variables (if any) should go.  For example:
-# conf.registerGlobalValue(ID, 'someConfigVariableName',
+# conf.registerGlobalValue(DALnetID, 'someConfigVariableName',
 #     registry.Boolean(False, _("""Help for someConfigVariableName.""")))
 
 conf.registerGlobalValue(
-    ID,
+    DALnetID,
     "nickservPassword",
     registry.String(
         "",
@@ -65,6 +65,6 @@ conf.registerGlobalValue(
     ),
 )
 
-# config plugins.ID.nickservPassword will return the value of this configuration variable.
+# config plugins.DALnetID.nickservPassword will return the value of this configuration variable.
 
 # vim:set shiftwidth=4 tabstop=4 expandtab textwidth=79:

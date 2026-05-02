@@ -2,7 +2,7 @@
 requires = ["setuptools"]
 
 [project]
-name = "limnoria-id"
+name = "limnoria-dalnetid"
 version = "0.0.0"
 authors = [
     { name = "Barry Suridge" }
@@ -18,7 +18,7 @@ classifiers = [
 ]
 
 [project.entry-points.'limnoria.plugins']
-ID = "limnoria_id"
+DALnetID = "limnoria_dalnetid"
 
 [tool.black]
 target-version = ["py311"]
@@ -35,8 +35,8 @@ extend-exclude = '''
 '''
 
 [tool.setuptools.package-dir]
-"limnoria_id" = "."
-"limnoria_id.local" = "local/"
+"limnoria_dalnetid" = "."
+"limnoria_dalnetid.local" = "local/"
 
 [tool.setuptools.package-data]
-"limnoria_id" = ["locales/*.po"]
+"limnoria_dalnetid" = ["locales/*.po"]

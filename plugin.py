@@ -34,22 +34,22 @@ from supybot.i18n import PluginInternationalization
 
 from . import config as plugin_config
 
-_ = PluginInternationalization("ID")
+_ = PluginInternationalization("DALnetID")
 
 
 def nickservIdentify(irc):
     """Identify to DALnet's NickServ"""
-    password = plugin_config.ID.nickservPassword()
+    password = plugin_config.DALnetID.nickservPassword()
     irc.queueMsg(ircmsgs.privmsg("NickServ@services.dal.net", "IDENTIFY %s" % password))
 
 
-class ID(callbacks.Plugin):
+class DALnetID(callbacks.Plugin):
     """A plugin to identify to DALnet's NickServ"""
 
     threaded = False
 
     def __init__(self, irc):
-        self.__parent = super(ID, self)
+        self.__parent = super(DALnetID, self)
         self.__parent.__init__(irc)
         self.irc = irc
 
@@ -61,7 +61,7 @@ class ID(callbacks.Plugin):
         """
         irc.reply("Identifying to NickServ...")
 
-        if not plugin_config.ID.nickservPassword():
+        if not plugin_config.DALnetID.nickservPassword():
             irc.error("NickServ password is not configured.")
             return
         nickservIdentify(irc)
@@ -69,6 +69,6 @@ class ID(callbacks.Plugin):
         irc.reply("The operation succeeded.")
 
 
-Class = ID
+Class = DALnetID
 
 # vim:set shiftwidth=4 softtabstop=4 expandtab textwidth=79:

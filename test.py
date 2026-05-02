@@ -31,8 +31,8 @@
 from supybot.test import *
 
 
-class IDTestCase(PluginTestCase):
-    plugins = ("ID",)
+class DALnetIDTestCase(PluginTestCase):
+    plugins = ("DALnetID",)
 
 
 # vim:set shiftwidth=4 tabstop=4 expandtab textwidth=79:

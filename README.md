@@ -1,15 +1,14 @@
-<!-- A plugin to identify to DALnet's NickServ -->
+<!-- DALnetID plugin for Limnoria -->
 
-## A DALnet NickServ Plugin for Limnoria
+## DALnetID for Limnoria
 
-[![Tests](https://github.com/Alcheri/WorldTime/actions/workflows/tests.yml/badge.svg?branch=Limnoria-WorldTime)](https://github.com/Alcheri/WorldTime/actions/workflows/tests.yml)
-[![Lint](https://github.com/Alcheri/WorldTime/actions/workflows/lint.yml/badge.svg?branch=Limnoria-WorldTime)](https://github.com/Alcheri/WorldTime/actions/workflows/lint.yml)
-[![CodeQL](https://github.com/Alcheri/WorldTime/actions/workflows/codeql.yml/badge.svg?branch=Limnoria-WorldTime)](https://github.com/Alcheri/WorldTime/actions/workflows/codeql.yml)
+[![Tests](https://github.com/Alcheri/ID/actions/workflows/tests.yml/badge.svg?branch=Limnoria-ID)](https://github.com/Alcheri/ID/actions/workflows/tests.yml)
+[![Lint](https://github.com/Alcheri/ID/actions/workflows/lint.yml/badge.svg?branch=Limnoria-ID)](https://github.com/Alcheri/ID/actions/workflows/lint.yml)
+[![CodeQL](https://github.com/Alcheri/ID/actions/workflows/codeql.yml/badge.svg?branch=Limnoria-ID)](https://github.com/Alcheri/ID/actions/workflows/codeql.yml)
 
-<em>A plugin to identify to DALnet's NickServ</em>
+<em>DALnetID identifies your bot to DALnet's NickServ.</em>
 
-``/msg <yourbot> config plugins.ID.nickservPassword [BotNickServPassword]``
-
+``/msg <yourbot> config plugins.DALnetID.nickservPassword [BotNickServPassword]``
 
 ``@id``
 
