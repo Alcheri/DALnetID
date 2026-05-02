@@ -13,9 +13,9 @@ name: "CodeQL Advanced"
 
 on:
   push:
-    branches: [ "Limnoria-ID" ]
+    branches: [ "Limnoria-DALnetID" ]
   pull_request:
-    branches: [ "Limnoria-ID" ]
+    branches: [ "Limnoria-DALnetID" ]
   schedule:
     - cron: '37 15 * * 3'
 

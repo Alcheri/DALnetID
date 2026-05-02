@@ -2,9 +2,9 @@
 
 ## DALnetID for Limnoria
 
-[![Tests](https://github.com/Alcheri/ID/actions/workflows/tests.yml/badge.svg?branch=Limnoria-ID)](https://github.com/Alcheri/ID/actions/workflows/tests.yml)
-[![Lint](https://github.com/Alcheri/ID/actions/workflows/lint.yml/badge.svg?branch=Limnoria-ID)](https://github.com/Alcheri/ID/actions/workflows/lint.yml)
-[![CodeQL](https://github.com/Alcheri/ID/actions/workflows/codeql.yml/badge.svg?branch=Limnoria-ID)](https://github.com/Alcheri/ID/actions/workflows/codeql.yml)
+[![Tests](https://github.com/Alcheri/ID/actions/workflows/tests.yml/badge.svg?branch=Limnoria-DALnetID)](https://github.com/Alcheri/ID/actions/workflows/tests.yml)
+[![Lint](https://github.com/Alcheri/ID/actions/workflows/lint.yml/badge.svg?branch=Limnoria-DALnetID)](https://github.com/Alcheri/ID/actions/workflows/lint.yml)
+[![CodeQL](https://github.com/Alcheri/ID/actions/workflows/codeql.yml/badge.svg?branch=Limnoria-DALnetID)](https://github.com/Alcheri/ID/actions/workflows/codeql.yml)
 
 <em>DALnetID identifies your bot to DALnet's NickServ.</em>
 
