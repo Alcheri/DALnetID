@@ -8,6 +8,8 @@
 
 <em>DALnetID identifies your bot to DALnet's NickServ.</em>
 
+See [docs/TODO.md](docs/TODO.md) for small future expansion ideas.
+
 ``/msg <yourbot> config plugins.DALnetID.nickservPassword [BotNickServPassword]``
 
 ``@id``
