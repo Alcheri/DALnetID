@@ -28,7 +28,7 @@
 
 ###
 
-from supybot import utils, plugins, ircutils, callbacks, ircmsgs
+from supybot import callbacks, ircmsgs
 from supybot.commands import wrap
 from supybot.i18n import PluginInternationalization
 
@@ -40,7 +40,9 @@ _ = PluginInternationalization("DALnetID")
 def nickservIdentify(irc):
     """Identify to DALnet's NickServ"""
     password = plugin_config.DALnetID.nickservPassword()
-    irc.queueMsg(ircmsgs.privmsg("NickServ@services.dal.net", "IDENTIFY %s" % password))
+    irc.queueMsg(
+        ircmsgs.privmsg("NickServ@services.dal.net", "IDENTIFY %s" % password)
+    )
 
 
 class DALnetID(callbacks.Plugin):
