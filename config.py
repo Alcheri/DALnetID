@@ -38,10 +38,12 @@ except Exception:
     # Placeholder that allows to run the plugin on a bot
     # without the i18n module
     def _(x):
+        """Return untranslated text when i18n is unavailable."""
         return x
 
 
 def configure(advanced):
+    """Register the DALnetID plugin during bot configuration."""
     # This will be called by supybot to configure this module.  advanced is
     # a bool that specifies whether the user identified themself as an advanced
     # user or not.  You should effect your configuration by manipulating the

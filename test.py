@@ -42,7 +42,10 @@ dalnetid_plugin = importlib.import_module("DALnetID.plugin")
 
 
 class DALnetIDTestCase(unittest.TestCase):
+    """Tests for DALnet NickServ identify message handling."""
+
     def testNickservIdentifyQueuesExpectedMessage(self):
+        """Queue the expected NickServ identify message."""
         irc = mock.Mock()
         fake_config = mock.Mock()
         fake_config.nickservPassword.return_value = "s3cr3t"

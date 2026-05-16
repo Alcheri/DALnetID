@@ -51,6 +51,7 @@ class DALnetID(callbacks.Plugin):
     threaded = False
 
     def __init__(self, irc):
+        """Initialise the plugin with the current IRC object."""
         self.__parent = super(DALnetID, self)
         self.__parent.__init__(irc)
         self.irc = irc
